@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat' , sans-serif;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/Diseño\ pagina.png);
+    background-size: cover;
+}
+
+.glass-container{
+    width: 900px;
+    height: 350px;
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.glass-container::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: -1;
+}
+
+.login-box{
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2{
+    color: black;
+    margin-top: 10px;
+    position: relative;
+    right: 38vh;
+    font-size: 26px;
+    top: 2vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+input{
+    padding: 10px;
+    margin-top: 25px;
+    position: relative;
+    right: 38vh;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid #fff;
+    color: black;
+    font-size: 13px;
+}
+
+input::placeholder{
+    color: black;
+}
+
+input:focus{
+    outline: none;
+}
+
+.opciones{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 12px;
+    color: black;
+    position: relative;
+    right: 38vh;
+}
+
+.opciones input{
+    margin-right: 5px;
+    margin-top: 0px;
+    position: relative;
+    left: -0.2vh;
+}
+
+.opciones a{
+    text-decoration: none;
+    color: blue;
+    margin-left: auto;
+}
+
+button{
+    background: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    position: relative;
+    right: 38vh;
+}
+
+button:hover{
+    background: mediumturquoise;
+    color: black;
+    outline: 1px solid #fff;
+}
+
+p{
+    font-size: 12px;
+    color: black;
+    margin-top: 15px;
+    position: relative;
+    right: 40vh;
+}
+
+.registrar a{
+    text-decoration: none;
+    margin-left: auto;
+    color: blue;
+}
+
+.Usuario p{
+    position: relative;
+    top: 2vh;
+    right: 51vh;
+}
+
+.Contraseña p{
+    position: relative;
+    top: 2vh;
+    right: 49.7vh;
+}
+
+img{
+    background-image: url(images/Imagen\ de\ WhatsApp\ 2024-11-06\ a\ las\ 14.54.40_4c5e24be.jpg);
+    background-size: cover;
+    height: 40vh;
+    position: relative;
+    bottom: 42vh;
+    left: 25vh;
+    filter: drop-shadow (0 0 10px rgba(0, 0, 0, .8))
+}
