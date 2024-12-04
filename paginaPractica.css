@@ -1,0 +1,588 @@
+body{
+    background-color: #dbe3e1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+@font-face{
+    font-family: 'Minecraft';
+    src: url(/fuentes/Minecraft.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #dbe3e1;
+    height: 10vh;
+    z-index: 1;
+}
+
+
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header .logo svg{
+    width: 30px;
+    height: 100%;
+    position: relative;
+    left: 25vh;
+}
+
+
+header div nav{
+    position: relative;
+    right: 40vh;
+}
+
+header nav{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+header nav a{
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color: #013024;
+    transition: all 0.2s linear;
+}
+
+header nav a:hover{
+    color: #006249;
+    transition: all 0.2s linear;
+}
+
+header .extra-nav button{
+    cursor: pointer;
+    background-color: #013024;
+    border: none;
+    color: #FFFCF6;
+    border-radius: 1vh;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 8px 10px;
+    position: relative;
+    right: 20vh;
+    font-family: 'Minecraft';
+    font-weight: 400;
+    transition: all 0.2s linear;
+}
+
+
+header .extra-nav button:hover{
+    background-color: #004e3a;
+    transition: all 0.2s linear;
+}
+
+
+
+/***************************************************SECTION*************************************/
+
+main .container{
+    display: flex;
+    justify-content: space-between;
+    width: 83%;
+    gap: 20vh;
+    position: relative;
+    left: 18vh;
+}
+
+main{
+    padding: 5rem 1rem;
+    max-height: 25vh;
+    z-index: 1;
+}
+
+main .container .titulo h1{
+    font-size: 7vh;
+}
+
+
+main .container .imagenes span,
+main .container .titulo h1 span{
+    font-family: 'Minecraft';
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+main .container .imagenes{
+    position: relative;
+    top: 5vh;
+}
+
+main .container .suscribete input{
+    font-size: 2vh;
+    border: none;
+    width: 32vh;
+    height: 5vh;
+    border-radius: 5px;
+}
+
+main .container .suscribete input:focus{
+    box-shadow: 0 0 5px;
+    outline: none;
+}
+
+main .container .suscribete{
+    position: relative;
+    top: 5.5vh;
+}
+
+main .container .suscribete button{
+    cursor: pointer;
+    background-color: #013024;
+    border: none;
+    color: #FFFCF6;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 8px 10px;
+    font-family: 'Minecraft';
+    font-weight: 400;
+    transition: all 0.2s ease;
+}
+
+main .container .suscribete button:hover{
+    background-color: #004e3a;
+    transition: all 0.2s ease;
+}
+
+/********************************************************ARTICULO******************************/
+
+article{
+    padding: 1rem 0;
+    max-height: 59vh;
+}
+
+article .container{
+    display: flex;
+    justify-content: space-between;
+    width: 86%;
+    gap: 20vh;
+    position: relative;
+    left: 16vh;
+}
+
+article .content .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+article .content .titulo{
+    font-family: 'Minecraft';
+    font-weight: 400;
+    font-style: italic;
+    padding: 0 12.5rem;
+}
+
+article .content .titulo h2{
+    font-size: 2vh;
+    position: relative;
+    right: 6vh;
+}
+
+article .content .container .imagenes{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3vh;
+    width: 95%;
+}
+
+article .content .container .imagenes img{
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+article .content .container .imagenes img:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+article .container .descripcion{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 95%;
+    font-size: 1.7vh;
+    gap: 3vh;
+}
+
+article .container .descripcion .palabra-box{ 
+    font-weight: normal;
+}
+
+article .container .descripcion .palabra-box p{
+    color: rgb(80, 80, 80);
+}
+
+/*****************************************************SECTION 2***************************/
+
+.section1 .container{
+    padding: 2rem 0;
+    max-height: 30vh;
+}
+
+.section1 .container .busqueda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+.section1 .container .titulo h1{
+    font-size: 2vh;
+    font-family: 'Minecraft';
+    font-weight: 600;
+    padding: 0 10.5rem;
+    position: relative;
+    top: 5vh;
+    letter-spacing: 2px;
+}
+
+.section1 .container .busqueda .busqueda-box{
+    border: 1px solid none;
+    width: 26%;
+    margin: 5vh 0;
+    height: 20vh;
+    transition: all 0.2s ease;
+    background-color: #df94c795;
+    border-radius: 5px;
+    transition: transform 0.2 ease;
+    cursor: pointer;
+}
+
+.section1 .container .busqueda .busqueda-box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.section1 .container .busqueda .busqueda-box p{
+    color: rgb(80, 80, 80);
+    padding: 0 3vh;
+    position: relative;
+    bottom: 1vh;
+}
+
+.section1 .container .busqueda .busqueda-box h1{
+    padding: 0 3vh;
+}
+
+.section1 .container .busqueda .busqueda-box button{
+    padding: 0 2vh;
+    margin: 0 2vh;
+    border: none;
+    height: 20px;
+    border-radius: 20px;
+    font-weight: 900;
+    font-family: 'Minecraft';
+    background-color: #df94c7;
+}
+
+/*************************************************************SECTION2****************************/
+
+.section2 .container{
+    padding: 0;
+    min-height: 1px;
+}
+
+.section2 .container .titulo h1{
+    font-size: 2vh;
+    font-family: 'Minecraft';
+    font-weight: 600;
+    padding: 0 10rem;
+}
+
+.section2 .container .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+  }
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #0073e6;
+}
+
+.section2 .grid-container .card  button{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 6px;
+    background-color: darkgray;
+    color: black;
+    font-family: 'Minecraft';
+    font-size: 2vh;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+.section2 .container-explorar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2 .explorar{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.section2 .explorar .explorar-box{
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.section2 .explorar .explorar-box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.section2 .container .explorar .explorar-box h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 7vh;
+    top: 2vh;
+}
+
+.section2 .container .explorar .explorar-box p{
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+    position: relative;
+    top: 2vh;
+}
+
+.section2 .container .explorar .explorar-box svg{
+    position: relative;
+    left: 33vh;
+    bottom: 10vh;
+}
+
+
+/**************************************************************SECTION 3*****************************/
+
+.section3 .container{
+    padding: 4rem 0;
+    min-height: 45vh;
+}
+
+.section3 .container .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section3 .container .content .titulo{
+    border: none;
+    padding: 1rem 5rem;
+    background-color: #72cc7a7c;
+    height: 30vh;
+}
+
+.section3 .container .content .titulo p{
+    color: rgb(77, 77, 77);
+    position: relative;
+    top: 3vh;
+    font-size: 2.2vh;
+}
+
+.section3 .container .content .titulo h1{
+    position: relative;
+    top: 3vh;
+    font-size: 4vh;
+}
+
+.section3 .container .content .titulo span{
+    font-family: 'Minecraft';
+    font-weight: 500; 
+}
+
+.section3 .container .input{
+    position: relative;
+    top: 5vh;
+}
+
+.section3 .container .input input{
+    height: 40px;
+    width: 20%;
+    background-color:#45964C    ;
+    border: none;
+    padding: 0 1rem;
+}
+
+.section3 .container .input input::placeholder{
+    color: rgb(53, 53, 53);
+}
+
+.section3 .container .input input:focus{
+    outline: none;
+    box-shadow: 0 0 5px;
+}
+
+.section3 .container .input button{
+    height: 40px;
+    width: 10%;
+    border: none;
+    cursor: pointer;
+    background-color: #72CC7A;
+    color: white;
+    transition: all 0.2s linear;    
+    font-family: 'Minecraft';
+}
+
+.section3 .container .input button:hover{
+    background-color: rgb(156, 156, 156);
+    transition: all 0.2s linear;
+    box-shadow: 0 0 5px;
+    background-color: #70E097;
+    transform: scale(1.02);
+}
+
+/****************************************FOOTER*******************/
+
+
+.footer {
+    background-color: #eaf6f4;
+    padding: 40px 20px;
+    border: none;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  .about {
+    max-width: 300px;
+  }
+  
+  .logo {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .follow-button {
+    background-color: white;
+    color: #333;
+    border: 1px solid #333;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .follow-button:hover {
+    background-color: #333;
+    color: white;
+  }
+  
+  .links ul {
+    list-style: none;
+  }
+  
+  .links li {
+    margin-bottom: 8px;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+  }
